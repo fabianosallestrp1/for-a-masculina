@@ -305,7 +305,7 @@ function Servicos() {
             >
               <Icon className="w-10 h-10 text-primary mb-5" />
               <h3 className="text-xl mb-3">{title}</h3>
-              <p className="font-sub text-muted-foreground leading-relaxed text-[15px]">
+              <p className="font-sub text-muted-foreground leading-relaxed text-base">
                 {desc}
               </p>
             </div>
@@ -503,7 +503,7 @@ function Agendar() {
                 rel="noopener noreferrer"
                 className="text-foreground hover:text-primary transition"
               >
-                <span className="block text-xs uppercase tracking-wider text-muted-foreground">
+                <span className="block text-sm uppercase tracking-wider font-semibold text-muted-foreground">
                   WhatsApp
                 </span>
                 {CONTACT.phone}
@@ -515,7 +515,7 @@ function Agendar() {
                 href={`mailto:${CONTACT.email}`}
                 className="text-foreground hover:text-primary transition break-all"
               >
-                <span className="block text-xs uppercase tracking-wider text-muted-foreground">
+                <span className="block text-sm uppercase tracking-wider font-semibold text-muted-foreground">
                   E-mail
                 </span>
                 {CONTACT.email}
@@ -524,7 +524,7 @@ function Agendar() {
             <li className="flex items-start gap-3">
               <MapPin className="w-5 h-5 text-primary mt-1 shrink-0" />
               <span className="text-foreground">
-                <span className="block text-xs uppercase tracking-wider text-muted-foreground">
+                <span className="block text-sm uppercase tracking-wider font-semibold text-muted-foreground">
                   Atendimento
                 </span>
                 {CONTACT.location}
@@ -580,7 +580,7 @@ function Agendar() {
 function Footer() {
   return (
     <footer
-      className="pt-14 pb-10 text-sm font-sub"
+      className="pt-14 pb-10 text-base font-sub"
       style={{ background: "var(--primary-deep)", color: "oklch(1 0 0 / 0.8)" }}
     >
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10 mb-10">
@@ -620,7 +620,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="max-w-6xl mx-auto px-6 border-t border-white/15 pt-6 text-center text-xs opacity-70">
+      <div className="max-w-6xl mx-auto px-6 border-t border-white/15 pt-6 text-center text-sm opacity-70">
         © {new Date().getFullYear()} Fabiano Salles — Todos os direitos reservados.
       </div>
     </footer>
