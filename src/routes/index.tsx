@@ -109,13 +109,18 @@ function Hero() {
     >
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 md:gap-14 items-center">
         <div className="order-2 md:order-1">
-          <p className="font-sub text-xs uppercase tracking-[0.25em] text-primary mb-5">
+          <img
+            src={logo}
+            alt="Fabiano Salles — Terapeuta Sistêmico e Constelador"
+            className="h-20 md:h-24 w-auto mb-8 drop-shadow-sm"
+          />
+          <p className="font-sub text-sm uppercase tracking-[0.25em] text-primary mb-5 font-semibold">
             Terapia sistêmica para homens
           </p>
-          <h1 className="text-4xl sm:text-5xl md:text-[3.4rem] leading-[1.05] mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-[3.6rem] leading-[1.05] mb-6">
             Reconheça sua história. Acesse a força do masculino.
           </h1>
-          <p className="font-sub text-lg text-muted-foreground leading-relaxed mb-8 max-w-xl">
+          <p className="font-sub text-lg md:text-xl text-muted-foreground leading-relaxed mb-8 max-w-xl">
             Acompanho homens adultos em processos de Constelação Familiar e
             Terapia Sistêmica — para compreender padrões que se repetem,
             encontrar clareza e seguir em frente com presença e propósito.
@@ -173,7 +178,7 @@ function ParaQuem() {
   return (
     <section id="para-quem" className="py-24 md:py-32 bg-background">
       <div className="max-w-4xl mx-auto px-6">
-        <p className="font-sub text-xs uppercase tracking-[0.25em] text-primary mb-4">
+        <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4">
           Para quem é
         </p>
         <h2 className="text-3xl md:text-4xl mb-12 max-w-2xl">
@@ -236,7 +241,7 @@ function ComoFunciona() {
       style={{ background: "var(--primary-soft)" }}
     >
       <div className="max-w-5xl mx-auto px-6">
-        <p className="font-sub text-xs uppercase tracking-[0.25em] text-primary mb-4">
+        <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4">
           Como funciona
         </p>
         <h2 className="text-3xl md:text-4xl mb-14 max-w-2xl">
@@ -282,7 +287,7 @@ function Servicos() {
   return (
     <section id="servicos" className="py-24 md:py-32 bg-background">
       <div className="max-w-6xl mx-auto px-6">
-        <p className="font-sub text-xs uppercase tracking-[0.25em] text-primary mb-4">
+        <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4">
           Serviços
         </p>
         <h2 className="text-3xl md:text-4xl mb-4 max-w-2xl">
@@ -300,7 +305,7 @@ function Servicos() {
             >
               <Icon className="w-10 h-10 text-primary mb-5" />
               <h3 className="text-xl mb-3">{title}</h3>
-              <p className="font-sub text-muted-foreground leading-relaxed text-[15px]">
+              <p className="font-sub text-muted-foreground leading-relaxed text-base">
                 {desc}
               </p>
             </div>
@@ -326,7 +331,7 @@ function Sobre() {
           className="rounded-2xl w-full max-w-sm mx-auto shadow-[var(--shadow-soft)] object-cover"
         />
         <div>
-          <p className="font-sub text-xs uppercase tracking-[0.25em] text-primary-soft/90 mb-4">
+          <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary-soft/90 mb-4">
             Sobre mim
           </p>
           <h2 className="text-3xl md:text-4xl mb-6 text-white">Fabiano Salles</h2>
@@ -376,7 +381,7 @@ function Depoimentos() {
   return (
     <section id="depoimentos" className="py-24 md:py-32 bg-background">
       <div className="max-w-3xl mx-auto px-6">
-        <p className="font-sub text-xs uppercase tracking-[0.25em] text-primary mb-4 text-center">
+        <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4 text-center">
           Depoimentos
         </p>
         <h2 className="text-3xl md:text-4xl mb-14 text-center">
@@ -448,7 +453,7 @@ function Inspiracoes() {
       style={{ background: "var(--primary-soft)" }}
     >
       <div className="max-w-6xl mx-auto px-6">
-        <p className="font-sub text-xs uppercase tracking-[0.25em] text-primary mb-4">
+        <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4">
           Inspirações
         </p>
         <h2 className="text-3xl md:text-4xl mb-14 max-w-2xl">
@@ -480,7 +485,7 @@ function Agendar() {
     <section id="agendar" className="py-24 md:py-32 bg-background">
       <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <p className="font-sub text-xs uppercase tracking-[0.25em] text-primary mb-4">
+          <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4">
             Como agendar
           </p>
           <h2 className="text-3xl md:text-4xl mb-6">O primeiro passo é simples.</h2>
@@ -498,7 +503,7 @@ function Agendar() {
                 rel="noopener noreferrer"
                 className="text-foreground hover:text-primary transition"
               >
-                <span className="block text-xs uppercase tracking-wider text-muted-foreground">
+                <span className="block text-sm uppercase tracking-wider font-semibold text-muted-foreground">
                   WhatsApp
                 </span>
                 {CONTACT.phone}
@@ -510,7 +515,7 @@ function Agendar() {
                 href={`mailto:${CONTACT.email}`}
                 className="text-foreground hover:text-primary transition break-all"
               >
-                <span className="block text-xs uppercase tracking-wider text-muted-foreground">
+                <span className="block text-sm uppercase tracking-wider font-semibold text-muted-foreground">
                   E-mail
                 </span>
                 {CONTACT.email}
@@ -519,7 +524,7 @@ function Agendar() {
             <li className="flex items-start gap-3">
               <MapPin className="w-5 h-5 text-primary mt-1 shrink-0" />
               <span className="text-foreground">
-                <span className="block text-xs uppercase tracking-wider text-muted-foreground">
+                <span className="block text-sm uppercase tracking-wider font-semibold text-muted-foreground">
                   Atendimento
                 </span>
                 {CONTACT.location}
@@ -575,7 +580,7 @@ function Agendar() {
 function Footer() {
   return (
     <footer
-      className="pt-14 pb-10 text-sm font-sub"
+      className="pt-14 pb-10 text-base font-sub"
       style={{ background: "var(--primary-deep)", color: "oklch(1 0 0 / 0.8)" }}
     >
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10 mb-10">
@@ -615,7 +620,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="max-w-6xl mx-auto px-6 border-t border-white/15 pt-6 text-center text-xs opacity-70">
+      <div className="max-w-6xl mx-auto px-6 border-t border-white/15 pt-6 text-center text-sm opacity-70">
         © {new Date().getFullYear()} Fabiano Salles — Todos os direitos reservados.
       </div>
     </footer>
