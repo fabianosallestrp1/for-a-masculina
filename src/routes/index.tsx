@@ -109,13 +109,18 @@ function Hero() {
     >
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 md:gap-14 items-center">
         <div className="order-2 md:order-1">
-          <p className="font-sub text-xs uppercase tracking-[0.25em] text-primary mb-5">
+          <img
+            src={logo}
+            alt="Fabiano Salles — Terapeuta Sistêmico e Constelador"
+            className="h-20 md:h-24 w-auto mb-8 drop-shadow-sm"
+          />
+          <p className="font-sub text-sm uppercase tracking-[0.25em] text-primary mb-5 font-semibold">
             Terapia sistêmica para homens
           </p>
-          <h1 className="text-4xl sm:text-5xl md:text-[3.4rem] leading-[1.05] mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-[3.6rem] leading-[1.05] mb-6">
             Reconheça sua história. Acesse a força do masculino.
           </h1>
-          <p className="font-sub text-lg text-muted-foreground leading-relaxed mb-8 max-w-xl">
+          <p className="font-sub text-lg md:text-xl text-muted-foreground leading-relaxed mb-8 max-w-xl">
             Acompanho homens adultos em processos de Constelação Familiar e
             Terapia Sistêmica — para compreender padrões que se repetem,
             encontrar clareza e seguir em frente com presença e propósito.
