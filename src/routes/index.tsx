@@ -178,7 +178,7 @@ function ParaQuem() {
   return (
     <section id="para-quem" className="py-24 md:py-32 bg-background">
       <div className="max-w-4xl mx-auto px-6">
-        <p className="font-sub text-xs uppercase tracking-[0.25em] text-primary mb-4">
+        <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4">
           Para quem é
         </p>
         <h2 className="text-3xl md:text-4xl mb-12 max-w-2xl">
@@ -241,7 +241,7 @@ function ComoFunciona() {
       style={{ background: "var(--primary-soft)" }}
     >
       <div className="max-w-5xl mx-auto px-6">
-        <p className="font-sub text-xs uppercase tracking-[0.25em] text-primary mb-4">
+        <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4">
           Como funciona
         </p>
         <h2 className="text-3xl md:text-4xl mb-14 max-w-2xl">
@@ -287,7 +287,7 @@ function Servicos() {
   return (
     <section id="servicos" className="py-24 md:py-32 bg-background">
       <div className="max-w-6xl mx-auto px-6">
-        <p className="font-sub text-xs uppercase tracking-[0.25em] text-primary mb-4">
+        <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4">
           Serviços
         </p>
         <h2 className="text-3xl md:text-4xl mb-4 max-w-2xl">
@@ -331,7 +331,7 @@ function Sobre() {
           className="rounded-2xl w-full max-w-sm mx-auto shadow-[var(--shadow-soft)] object-cover"
         />
         <div>
-          <p className="font-sub text-xs uppercase tracking-[0.25em] text-primary-soft/90 mb-4">
+          <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary-soft/90 mb-4">
             Sobre mim
           </p>
           <h2 className="text-3xl md:text-4xl mb-6 text-white">Fabiano Salles</h2>
@@ -381,7 +381,7 @@ function Depoimentos() {
   return (
     <section id="depoimentos" className="py-24 md:py-32 bg-background">
       <div className="max-w-3xl mx-auto px-6">
-        <p className="font-sub text-xs uppercase tracking-[0.25em] text-primary mb-4 text-center">
+        <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4 text-center">
           Depoimentos
         </p>
         <h2 className="text-3xl md:text-4xl mb-14 text-center">
@@ -453,7 +453,7 @@ function Inspiracoes() {
       style={{ background: "var(--primary-soft)" }}
     >
       <div className="max-w-6xl mx-auto px-6">
-        <p className="font-sub text-xs uppercase tracking-[0.25em] text-primary mb-4">
+        <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4">
           Inspirações
         </p>
         <h2 className="text-3xl md:text-4xl mb-14 max-w-2xl">
@@ -485,7 +485,7 @@ function Agendar() {
     <section id="agendar" className="py-24 md:py-32 bg-background">
       <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <p className="font-sub text-xs uppercase tracking-[0.25em] text-primary mb-4">
+          <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4">
             Como agendar
           </p>
           <h2 className="text-3xl md:text-4xl mb-6">O primeiro passo é simples.</h2>
