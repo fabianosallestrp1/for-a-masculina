@@ -387,6 +387,9 @@ function Depoimentos() {
       <h2>Ecos do processo</h2>
       <p>O que algumas pessoas disseram sobre essa experiência.</p>
       <blockquote className="quotes">{`"${t.q}"`}</blockquote>
+      ite className="block text-center text-muted-foreground text-sm mt-2">
+        — relato anônimo
+      </cite>
       <div className="carousel">
         <button onClick={prev}><ChevronLeft /></button>
         {items.map((_, idx) => (
@@ -395,7 +398,7 @@ function Depoimentos() {
         ))}
         <button onClick={next}><ChevronRight /></button>
       </div>
-      <p className="text-xs text-muted-foreground mt-6 max-w-md mx-auto text-center leading-relaxed">
+      <p className="text-xs text-muted-foreground mt-6 max-w-md mx-auto text-center leading-relaxed italic">
         Relatos compartilhados voluntariamente por pessoas que vivenciaram o processo.
         As identidades foram preservadas integralmente — sem iniciais, idade ou qualquer
         dado identificável — em respeito ao sigilo e à ética que orientam este trabalho.
