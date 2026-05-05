@@ -375,16 +375,16 @@ function Sobre() {
 function Depoimentos() {
   const items = [
     {
-      q: "Um espaço onde eu pude parar de explicar e simplesmente olhar.",
-      a: " ",
+      q: "Encontrei um lugar onde pude finalmente baixar a guarda. Em poucos meses minha relação com meu pai mudou — e comigo mesmo também.",
+      a: "R., 42 anos",
     },
     {
-      q: "Algo em mim se reorganizou. Não sei bem descrever — mas senti.,
-      a: " ",
+      q: "A constelação com o Fabiano foi um divisor de águas no meu casamento e na minha paternidade. Uma escuta rara.",
+      a: "M., 38 anos",
     },
     {
-      q: "Cheguei sem saber o que esperar. Saí sabendo para onde olhar.",
-      a: " ",
+      q: "Saio de cada sessão com mais clareza sobre quem eu sou e do que estou sendo chamado a fazer.",
+      a: "L., 51 anos",
     },
   ];
   const [i, setI] = useState(0);
@@ -395,7 +395,7 @@ function Depoimentos() {
     <section id="depoimentos" className="py-24 md:py-32 bg-background">
       <div className="max-w-3xl mx-auto px-6">
         <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4 text-center">
-          ECOS DO PROCESSO
+          Depoimentos
         </p>
         <h2 className="text-3xl md:text-4xl mb-14 text-center">
           Histórias de homens que atravessaram.
@@ -440,10 +440,10 @@ function Depoimentos() {
           </button>
         </div>
       </div>
-	   
     </section>
   );
 }
+
 
 
       
