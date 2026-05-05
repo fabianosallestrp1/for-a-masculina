@@ -172,11 +172,12 @@ function Hero() {
 
 function ParaQuem() {
   const items = [
-    "Você sente que carrega um peso antigo que não consegue nomear.",
-    "Repete padrões em relacionamentos, trabalho ou na relação com pai e mãe.",
-    "Está em um momento de virada — paternidade, separação, luto, recomeço.",
-    "Quer compreender o lugar que ocupa na sua família e na sua história.",
-    "Busca um espaço onde possa ser homem sem máscara, sem julgamento.",
+    "Você enfrenta dificuldades nas relações — no namoro, no casamento, com os filhos, com o pai, com a mãe ou até consigo mesmo — e percebe que algo se repete, mesmo quando tenta fazer diferente.",
+    "Você não consegue sustentar relações estáveis, se envolve, se afasta, rompe ou se cala, e sente que há um padrão por trás disso.",
+    "O dinheiro até chega, mas não fica; a vida anda, mas não se firma; você trabalha, se esforça, mas não consegue construir estabilidade com tranquilidade.",
+    "Você vive momentos de virada, como separação, paternidade, luto, recomeços ou crises internas, e sente que precisa olhar sua história com mais profundidade.",
+    "Você quer compreender o lugar que ocupa na sua família e perceber como essa posição influencia suas escolhas, vínculos e forma de caminhar pela vida.",
+    "Você busca um espaço sério e seguro, onde possa olhar para si com verdade, sem precisar sustentar máscaras o tempo todo.",
   ];
   return (
     <section id="para-quem" className="py-24 md:py-32 bg-background">
@@ -209,6 +210,9 @@ function ParaQuem() {
             </li>
           ))}
         </ul>
+        <p className="mt-12 font-sub text-lg md:text-xl text-foreground/90 leading-relaxed max-w-2xl italic">
+          Se algo em você sente que não dá mais para seguir do mesmo jeito, esse pode ser um bom começo.
+        </p>
       </div>
     </section>
   );
