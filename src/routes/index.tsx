@@ -223,22 +223,22 @@ function ComoFunciona() {
     {
       n: "01",
       t: "Conversa inicial",
-      d: "Um primeiro encontro online para escutar você, entender sua demanda e definir juntos o caminho.",
+      d: "Um primeiro encontro, talvez online, para escutar você, compreender sua demanda e avaliar juntos o caminho mais adequado para este momento.",
     },
     {
       n: "02",
       t: "Sessões de terapia sistêmica",
-      d: "Encontros semanais ou quinzenais, online ou presenciais, integrando escuta, corpo e olhar sistêmico.",
+      d: "Encontros semanais ou quinzenais, online ou presenciais, integrando escuta, corpo e olhar sistêmico para ampliar a consciência sobre o que você vive e o que se repete.",
     },
     {
       n: "03",
       t: "Constelação familiar",
-      d: "Quando indicado, propomos uma constelação individual ou em grupo para olhar o sistema familiar.",
+      d: "Quando fizer sentido no processo, propomos uma constelação individual ou em grupo para olhar o sistema familiar e as dinâmicas que podem estar influenciando sua vida hoje.",
     },
     {
       n: "04",
       t: "Integração",
-      d: "Acompanhamento do que se moveu — para que a transformação chegue ao cotidiano e às relações.",
+      d: "Acompanhamento do que se moveu nas sessões, para que os insights não fiquem apenas no campo da compreensão, mas alcancem o cotidiano, as relações e as decisões concretas.",
     },
   ];
   return (
