@@ -406,7 +406,7 @@ function Depoimentos() {
     </section>
   );
 }
-
+      
 function Inspiracoes() {
   const quotes = [
     {
