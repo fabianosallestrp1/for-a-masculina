@@ -420,14 +420,22 @@ function Depoimentos() {
           ))}
         </div>
 
-        <div className="mt-6 flex justify-between">
-          <button onClick={prev} aria-label="Anterior" className="btn">
-            ‹
-          </button>
-          <button onClick={next} aria-label="Próximo" className="btn">
-            ›
-          </button>
-        </div>
+<div className="mt-6 flex justify-between">
+  <button
+    onClick={prev}
+    aria-label="Anterior"
+    className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-xl text-primary hover:bg-primary/10 transition-colors"
+  >
+    ‹
+  </button>
+  <button
+    onClick={next}
+    aria-label="Próximo"
+    className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-xl text-primary hover:bg-primary/10 transition-colors"
+  >
+    ›
+  </button>
+</div>
 
         <p className="mt-8 text-xs text-muted-foreground">
           * Relatos compartilhados com autorização, preservando o anonimato.
