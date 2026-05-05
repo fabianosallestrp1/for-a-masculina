@@ -447,16 +447,19 @@ function Depoimentos() {
 function Inspiracoes() {
   const quotes = [
     {
-      t: "O que herdamos de nossos pais é apenas o começo. O que fazemos com isso é nossa responsabilidade.",
+      t: "O que reprovamos nos aprisiona, e só o que amamos nos liberta.",
+      a: "Joan Garriga",
+      o: "em “Onde estão as moedas?”",
+    },
+    {
+      t: "Cada um de nós encontra a canção que deve cantar. Quem canta essa canção está feliz, bem profundamente, não importa qual seja a sua tarefa.",
       a: "Bert Hellinger",
+      o: "em “A fonte não precisa perguntar pelo caminho”",
     },
     {
-      t: "Não é o caminho que nos transforma, mas a coragem de caminhar.",
+      t: "Não tenho caminho novo. O que tenho de novo é o jeito de caminhar.",
       a: "Thiago de Mello",
-    },
-    {
-      t: "A verdadeira força está em reconhecer nossas raízes e seguir em frente com clareza.",
-      a: "Fabiano Salles",
+      o: "poema “Vida Verdadeira”, da obra “Faz Escuro mas eu Canto”",
     },
   ];
   return (
@@ -482,8 +485,11 @@ function Inspiracoes() {
               <blockquote className="font-sub italic text-foreground/85 leading-relaxed mb-4">
                 "{q.t}"
               </blockquote>
-              <figcaption className="font-sub text-sm font-semibold text-primary">
-                — {q.a}
+              <figcaption className="font-sub text-sm text-primary">
+                <span className="font-semibold">— {q.a}</span>
+                <span className="block text-muted-foreground not-italic mt-1 font-normal">
+                  {q.o}
+                </span>
               </figcaption>
             </figure>
           ))}
