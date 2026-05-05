@@ -9,9 +9,9 @@ import {
   Quote,
   ChevronLeft,
   ChevronRight,
-  Users,
-  Heart,
-  Briefcase,
+  TreePine,
+  Compass,
+  Network,
 } from "lucide-react";
 import logo from "@/assets/logo.png";
 import portrait from "@/assets/fabiano-portrait.png";
@@ -276,19 +276,19 @@ function ComoFunciona() {
 function Servicos() {
   const services = [
     {
-      icon: Users,
+      icon: TreePine,
       title: "Constelação Individual",
-      desc: "Sessão fenomenológica e sistêmica de até 1h30, com bonecos e representações simbólicas, para investigar dinâmicas ocultas, padrões repetitivos e lealdades invisíveis. Online ou presencial em Uberlândia-MG.",
+      desc: "Sessão fenomenológica e sistêmica de até 1h30, com recursos simbólicos e representativos, para investigar dinâmicas ocultas, padrões repetitivos e vínculos que pedem um novo olhar. Online ou presencial em Uberlândia-MG.",
     },
     {
-      icon: Heart,
+      icon: Compass,
       title: "Acompanhamento Terapêutico",
-      desc: "Sessões de 50 min em frequência combinada, integrando Constelação Familiar e escuta clínica para sustentar mudanças consistentes em relações, escolhas de vida e padrões emocionais.",
+      desc: "Sessões de 50 minutos em frequência combinada, integrando Constelação Familiar e escuta clínica para sustentar mudanças consistentes nas relações, nas escolhas e nos padrões emocionais.",
     },
     {
-      icon: Briefcase,
+      icon: Network,
       title: "Constelação Empresarial",
-      desc: "Aplicação da abordagem sistêmica ao contexto corporativo — pacote com anamnese, sessão de constelação e acompanhamento para destravar liderança, equipes e resultados.",
+      desc: "Aplicação da abordagem sistêmica ao contexto organizacional, com anamnese, sessão de constelação e acompanhamento voltado a liderança, equipes, clima e resultados.",
     },
   ];
   return (
