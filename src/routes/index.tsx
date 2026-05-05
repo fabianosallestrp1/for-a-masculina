@@ -9,9 +9,9 @@ import {
   Quote,
   ChevronLeft,
   ChevronRight,
-  Users,
-  Heart,
-  Briefcase,
+  TreePine,
+  Compass,
+  Network,
 } from "lucide-react";
 import logo from "@/assets/logo.png";
 import portrait from "@/assets/fabiano-portrait.png";
