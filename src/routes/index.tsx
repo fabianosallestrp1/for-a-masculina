@@ -372,21 +372,6 @@ function Sobre() {
   );
 }
 
-const ECOS = [
-  {
-    q: "Cheguei sem saber bem o que estava buscando. Saí com uma sensação que há muito tempo não conhecia: de que faz sentido estar aqui.",
-    a: "Participante do processo terapêutico",
-  },
-  {
-    q: "Algo que carregava há anos — uma tensão com meu pai que eu nem conseguia nomear — começou a se mover. Não virou solução do dia para a noite, mas virou caminho.",
-    a: "Participante do processo terapêutico",
-  },
-  {
-    q: "O que mais me surpreendeu foi o espaço. Não precisei ter todas as respostas. Só precisei estar presente.",
-    a: "Participante do processo terapêutico",
-  },
-];
-
 function Depoimentos() {
   const items = [
     {
@@ -455,10 +440,7 @@ function Depoimentos() {
           </button>
         </div>
       </div>
-	   <p className="mt-8 text-xs text-muted-foreground">
-          * Relatos compartilhados com autorização, preservando o anonimato.
-          Não representam promessa de resultado terapêutico.
-        </p>
+	   
     </section>
   );
 }
