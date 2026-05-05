@@ -388,63 +388,82 @@ const ECOS = [
 ];
 
 function Depoimentos() {
+  const items = [
+    {
+      q: "Um espaço onde eu pude parar de explicar e simplesmente olhar.",
+      a: " ",
+    },
+    {
+      q: "Algo em mim se reorganizou. Não sei bem descrever — mas senti.,
+      a: " ",
+    },
+    {
+      q: "Cheguei sem saber o que esperar. Saí sabendo para onde olhar.",
+      a: " ",
+    },
+  ];
   const [i, setI] = useState(0);
-  const items = ECOS;
+  const next = () => setI((p) => (p + 1) % items.length);
+  const prev = () => setI((p) => (p - 1 + items.length) % items.length);
   const t = items[i];
-  const prev = () => setI((i - 1 + items.length) % items.length);
-  const next = () => setI((i + 1) % items.length);
-
   return (
-    <section id="depoimentos" className="py-16">
-      <div className="container">
-        <h2 className="text-2xl font-semibold">Ecos do processo</h2>
-        <p className="mt-2 text-muted-foreground">
-          Impressões de quem já esteve nesse espaço.
+    <section id="depoimentos" className="py-24 md:py-32 bg-background">
+      <div className="max-w-3xl mx-auto px-6">
+        <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4 text-center">
+          ECOS DO PROCESSO
         </p>
-
-        <blockquote className="mt-8 text-lg italic">
-          &ldquo;{t.q}&rdquo;
-        </blockquote>
-        <p className="mt-4 font-medium">— {t.a}</p>
-
-        <div className="mt-6 flex gap-2 items-center">
-          {items.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => setI(idx)}
-              aria-label={`Eco ${idx + 1}`}
-              className={`h-2 rounded-full transition-all ${
-                idx === i ? "bg-primary w-8" : "bg-primary/20 w-2"
-              }`}
-            />
-          ))}
+        <h2 className="text-3xl md:text-4xl mb-14 text-center">
+          Histórias de homens que atravessaram.
+        </h2>
+        <figure
+          className="p-8 md:p-12 rounded-2xl border border-border bg-card shadow-[var(--shadow-card)] text-center"
+        >
+          <Quote className="h-8 w-8 text-primary/40 mx-auto mb-5" />
+          <blockquote className="font-sub text-lg leading-relaxed text-foreground/90 italic">
+            "{t.q}"
+          </blockquote>
+          <figcaption className="mt-6 font-sub text-sm text-muted-foreground">
+            — {t.a}
+          </figcaption>
+        </figure>
+        <div className="flex justify-center items-center gap-4 mt-8">
+          <button
+            onClick={prev}
+            aria-label="Anterior"
+            className="p-2 rounded-full border-2 border-primary/30 text-primary hover:bg-primary/5 transition"
+          >
+            <ChevronLeft className="w-5 h-5" />
+          </button>
+          <div className="flex items-center gap-2">
+            {items.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setI(idx)}
+                aria-label={`Depoimento ${idx + 1}`}
+                className={`h-2 rounded-full transition-all ${
+                  idx === i ? "bg-primary w-8" : "bg-primary/20 w-2"
+                }`}
+              />
+            ))}
+          </div>
+          <button
+            onClick={next}
+            aria-label="Próximo"
+            className="p-2 rounded-full border-2 border-primary/30 text-primary hover:bg-primary/5 transition"
+          >
+            <ChevronRight className="w-5 h-5" />
+          </button>
         </div>
-
-<div className="mt-6 flex justify-between">
-  <button
-    onClick={prev}
-    aria-label="Anterior"
-    className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-xl text-primary hover:bg-primary/10 transition-colors"
-  >
-    ‹
-  </button>
-  <button
-    onClick={next}
-    aria-label="Próximo"
-    className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-xl text-primary hover:bg-primary/10 transition-colors"
-  >
-    ›
-  </button>
-</div>
-
-        <p className="mt-8 text-xs text-muted-foreground">
+      </div>
+	   <p className="mt-8 text-xs text-muted-foreground">
           * Relatos compartilhados com autorização, preservando o anonimato.
           Não representam promessa de resultado terapêutico.
         </p>
-      </div>
     </section>
   );
 }
+
+
       
 function Inspiracoes() {
   const quotes = [
