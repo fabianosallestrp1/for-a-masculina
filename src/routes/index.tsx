@@ -115,15 +115,19 @@ function Hero() {
             className="h-20 md:h-24 w-auto mb-8 drop-shadow-sm"
           />
           <p className="font-sub text-sm uppercase tracking-[0.25em] text-primary mb-5 font-semibold">
-            Terapia sistêmica para homens
+            Terapia Sistêmica para Homens
           </p>
           <h1 className="text-4xl sm:text-5xl md:text-[3.6rem] leading-[1.05] mb-6">
-            Reconheça sua história. Acesse a força do masculino.
+            Reconheça sua história, reconecte-se consigo e acesse a força do masculino.
           </h1>
-          <p className="font-sub text-lg md:text-xl text-muted-foreground leading-relaxed mb-8 max-w-xl">
-            Acompanho homens adultos em processos de Constelação Familiar e
-            Terapia Sistêmica — para compreender padrões que se repetem,
-            encontrar clareza e seguir em frente com presença e propósito.
+          <p className="font-sub text-lg md:text-xl text-muted-foreground leading-relaxed mb-6 max-w-xl">
+            Acompanho homens em processos de Constelação Familiar e Terapia
+            Sistêmica para compreender padrões que se repetem, fortalecer a
+            relação consigo mesmos e seguir novos caminhos com mais clareza nas
+            relações, nas escolhas e na própria história.
+          </p>
+          <p className="font-sub text-sm md:text-base text-muted-foreground/90 mb-8">
+            Atendimentos online para Brasil e exterior · Presencial em Uberlândia-MG.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <a
@@ -142,11 +146,10 @@ function Hero() {
               Como funciona
             </a>
           </div>
-          <div className="mt-10 flex items-center gap-6 text-xs font-sub text-muted-foreground">
-            <span>Online · Brasil e exterior</span>
-            <span className="hidden sm:inline">·</span>
-            <span className="hidden sm:inline">Presencial em Uberlândia-MG</span>
-          </div>
+          <p className="mt-5 font-sub text-sm text-muted-foreground italic max-w-md">
+            Você pode me escrever com simplicidade, mesmo que ainda não saiba
+            explicar exatamente o que está vivendo.
+          </p>
         </div>
 
         <div className="order-1 md:order-2 relative">
