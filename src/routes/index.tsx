@@ -345,19 +345,25 @@ function Sobre() {
           <div className="space-y-5 font-sub text-white/90 leading-relaxed text-lg">
             <p>
               Sou Constelador e Terapeuta Sistêmico. Há mais de uma década
-              acompanho homens adultos em processos de autoconhecimento,
-              transição de vida e reconciliação com suas origens.
+              acompanho processos de autoconhecimento, transição de vida e
+              reconciliação com as próprias origens, com especial dedicação ao
+              trabalho com homens adultos.
             </p>
             <p>
               Minha abordagem integra a Constelação Familiar com uma condução
               clínica focada em ampliar a consciência sobre padrões familiares,
-              lealdades invisíveis e dinâmicas sistêmicas que limitam o
-              potencial humano.
+              lealdades invisíveis e dinâmicas sistêmicas que muitas vezes
+              limitam vínculos, escolhas e possibilidades de vida.
+            </p>
+            <p>
+              Embora meu trabalho tenha hoje um foco especial no universo
+              masculino, o que sustenta minha prática é o compromisso com
+              histórias humanas que pedem escuta, verdade e reposicionamento.
             </p>
             <p>
               Acredito que toda história merece ser olhada com dignidade — e
-              que, quando um homem encontra seu lugar no sistema familiar, ele
-              pode caminhar com leveza, clareza e força.
+              que, quando alguém encontra seu lugar no sistema familiar, pode
+              caminhar com mais leveza, clareza e força.
             </p>
           </div>
         </div>
