@@ -1,59 +1,47 @@
-## Reestruturação da prova social (CFP-safe)
+## Objetivo
 
-Como você não é psicólogo registrado no CFP, as resoluções não te obrigam — mas vamos adotar a mesma postura ética como padrão de qualidade e cuidado clínico. Isso protege a sua imagem, evita promessas de resultado e mantém o tom fenomenológico/sóbrio da página.
+Tornar mais claro, na seção "Sobre mim", que há um **foco especial no universo masculino (homens adultos / meia-idade)**, sem que isso signifique restrição — outros públicos também são bem-vindos.
 
-### O que muda na navegação
+## Diagnóstico do texto atual
 
-- O item de menu "Depoimentos" passa a se chamar **"Ecos"** (apontando para `#ecos`).
-- Surge uma nova seção **"Trajetória"**, posicionada logo antes de "Sobre mim".
+Hoje a ideia aparece em dois lugares e fica meio diluída:
 
-### Nova seção: Trajetória (prova social de autoridade)
+- **Parágrafo 1 (l. 347–351):** "...com especial dedicação ao trabalho com homens adultos."
+- **Parágrafo 3 (l. 358–362):** "Embora meu trabalho tenha hoje um foco especial no universo masculino, o que sustenta minha prática é o compromisso com histórias humanas que pedem escuta, verdade e reposicionamento."
 
-Posição: antes de "Sobre mim". Fundo neutro, mesma linguagem visual das demais.
+Problemas:
+1. A abertura ("acolho outros públicos") fica **implícita** — o leitor que não é homem pode achar que o trabalho não é para ele e sair.
+2. A repetição da ideia "foco no masculino" em dois parágrafos enfraquece os dois.
+3. "Homens adultos" é genérico — perde a ressonância com o público-alvo real (homens de meia-idade, em travessia).
 
-Estrutura:
-- Título pequeno: "Trajetória"
-- Headline: "Anos de prática, escuta e estudo."
-- Linha de números (3 blocos lado a lado, ícones sóbrios já no estilo da página):
-  - `[X]+ anos` de prática sistêmica
-  - `[X]+` constelações conduzidas
-  - `[X]+` grupos / círculos facilitados
-- Bloco "Formação e referências" (lista enxuta, 3–5 itens):
-  - Formação em Constelação Familiar — `[Instituição]`
-  - Formação em Terapia Sistêmica — `[Instituição]`
-  - Supervisão contínua com `[Nome / linha de trabalho]`
-  - Participação em encontros e jornadas — `[evento/ano]`
-- Microcopy de rodapé: "Atendimentos online e presenciais em Uberlândia-MG."
+## Proposta
 
-Todos os campos entre `[...]` ficam como **placeholders** prontos para você preencher depois.
+Consolidar a ideia em **um único parágrafo direto**, mais explícito sobre os dois movimentos (foco + acolhimento amplo), e ajustar o parágrafo 1 para não duplicar.
 
-### Seção reformulada: Ecos do processo (substitui "Depoimentos")
+### Parágrafo 1 — versão revisada
+> Sou Constelador e Terapeuta Sistêmico. Há mais de uma década acompanho processos de autoconhecimento, transição de vida e reconciliação com as próprias origens.
 
-Posição: mesma da atual seção "Depoimentos". Mantém o carrossel já existente (setas + dots), só muda conteúdo e enquadramento.
+(removido "com especial dedicação ao trabalho com homens adultos" — passa a viver no parágrafo 3, sem repetição)
 
-- Título pequeno: "Ecos"
-- Headline: "Sobre o espaço, a escuta e a condução."
-- Abertura curta (1 linha, em itálico discreto), com 2 perguntas que substituem a ideia de "Você já sentiu isso?":
-  - "Já procurou um lugar onde fosse possível baixar a guarda? Onde a sua história pudesse ser olhada sem pressa?"
-- 3 a 5 frases curtas, **sem nome, sem idade, sem cidade, sem contexto pessoal**, falando apenas da experiência do espaço/condução. Exemplos (placeholders editáveis):
-  - "Uma escuta que eu não sabia que era possível."
-  - "Um espaço sério, sem atalhos e sem promessas."
-  - "Saí com a sensação de ter sido visto sem ser julgado."
-  - "Um cuidado raro com cada palavra dita."
-  - "A condução sustenta o silêncio sem pressa."
-- Nota de rodapé pequena, em `text-muted-foreground`:
-  - "Frases compartilhadas espontaneamente por participantes sobre a experiência do espaço. Nenhum relato envolve resultados clínicos, dados pessoais ou identificação."
+### Parágrafo 3 — três variações para escolher
 
-### Detalhes técnicos
+**Opção A — direta e acolhedora (recomendada)**
+> Tenho um foco especial no trabalho com homens em meia-idade — momento de travessia em que muitas perguntas pedem lugar. Mas meu consultório acolhe qualquer pessoa que chegue com uma história que pede escuta: mulheres, casais, jovens adultos. O que sustenta a prática não é o público, é o compromisso com a verdade de cada história.
 
-- Arquivo único afetado: `src/routes/index.tsx`.
-- Novo componente `Trajetoria()` adicionado e referenciado no JSX principal antes de `<SobreMim />` (ou equivalente).
-- Componente `Depoimentos()` renomeado para `Ecos()` (id da seção: `ecos`), mantendo o mesmo carrossel/markup, apenas trocando textos, headline, label e removendo o campo "autor" (`figcaption` vira a nota de rodapé única da seção, não por item).
-- Atualizar o array do menu (linha ~42): `["Ecos", "#ecos"]`.
-- Ícones novos (Trajetória) usando lucide-react já presente, no mesmo estilo sóbrio: `TreeDeciduous`, `Compass`, `Network` (ou `Waypoints`) — um por bloco de número.
-- Sem mudança de tokens de design, sem novas dependências, sem alteração de rotas.
+**Opção B — mais sóbria, fenomenológica**
+> Embora meu trabalho hoje tenha foco especial em homens em meia-idade, atendo qualquer pessoa que busque um espaço de escuta e reposicionamento. O que sustenta a prática é o compromisso com histórias humanas — independente de quem as traz.
 
-### Fora de escopo
+**Opção C — enxuta, em duas frases**
+> Meu foco principal é o trabalho com homens em meia-idade, em momento de travessia. Atendo também mulheres, casais e outros adultos que cheguem com uma história que pede escuta.
 
-- Não mexer nas seções "Serviços", "Sobre mim" e "Inspirações" já ajustadas.
-- Não alterar SEO/head desta rota nesta etapa.
+## Perguntas antes de implementar
+
+1. **Qual opção prefere** (A, B, C, ou misturar)?
+2. Manter "homens em meia-idade" ou prefere outra formulação ("homens adultos em travessia", "homens 35–60", etc.)?
+3. Quer que eu também ajuste o **hero** (l. 121: "...a força do masculino") para refletir a mesma abertura, ou o hero permanece com tom mais focado no público-alvo principal?
+
+## Arquivos afetados
+- `src/routes/index.tsx` (apenas dois parágrafos da função `Sobre`, l. 346–362)
+
+## Custo estimado
+1 crédito (edição pequena, um único arquivo).
