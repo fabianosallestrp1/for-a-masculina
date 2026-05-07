@@ -39,7 +39,7 @@ const NAV = [
   ["Como funciona", "#como-funciona"],
   ["Serviços", "#servicos"],
   ["Sobre", "#sobre"],
-  ["Depoimentos", "#depoimentos"],
+  ["Ecos", "#ecos"],
   ["Agendar", "#agendar"],
 ];
 
@@ -372,44 +372,88 @@ function Sobre() {
   );
 }
 
-function Depoimentos() {
+function Trajetoria() {
+  const stats = [
+    { Icon: TreePine, n: "[X]+", l: "anos de prática sistêmica" },
+    { Icon: Compass, n: "[X]+", l: "constelações conduzidas" },
+    { Icon: Network, n: "[X]+", l: "grupos e círculos facilitados" },
+  ];
+  const formacao = [
+    "Formação em Constelação Familiar — [Instituição]",
+    "Formação em Terapia Sistêmica — [Instituição]",
+    "Supervisão contínua com [Nome / linha de trabalho]",
+    "Participação em encontros e jornadas — [evento / ano]",
+  ];
+  return (
+    <section id="trajetoria" className="py-24 md:py-32 bg-secondary/30">
+      <div className="max-w-5xl mx-auto px-6">
+        <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4 text-center">
+          Trajetória
+        </p>
+        <h2 className="text-3xl md:text-4xl mb-14 text-center">
+          Anos de prática, escuta e estudo.
+        </h2>
+        <div className="grid sm:grid-cols-3 gap-8 mb-16">
+          {stats.map(({ Icon, n, l }) => (
+            <div key={l} className="text-center">
+              <Icon className="h-8 w-8 text-primary mx-auto mb-4" strokeWidth={1.5} />
+              <div className="text-3xl md:text-4xl text-foreground mb-2">{n}</div>
+              <p className="font-sub text-sm text-muted-foreground leading-relaxed">{l}</p>
+            </div>
+          ))}
+        </div>
+        <div className="max-w-2xl mx-auto p-8 rounded-2xl border border-border bg-card shadow-[var(--shadow-card)]">
+          <h3 className="font-sub text-sm uppercase tracking-[0.2em] font-semibold text-primary mb-5 text-center">
+            Formação e referências
+          </h3>
+          <ul className="space-y-3 font-sub text-foreground/90">
+            {formacao.map((f) => (
+              <li key={f} className="flex gap-3">
+                <span className="text-primary/60 mt-1.5">•</span>
+                <span>{f}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <p className="text-center font-sub text-sm text-muted-foreground mt-8">
+          Atendimentos online e presenciais em Uberlândia-MG.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+function Ecos() {
   const items = [
-    {
-      q: "Encontrei um lugar onde pude finalmente baixar a guarda. Em poucos meses minha relação com meu pai mudou — e comigo mesmo também.",
-      a: "R., 42 anos",
-    },
-    {
-      q: "A constelação com o Fabiano foi um divisor de águas no meu casamento e na minha paternidade. Uma escuta rara.",
-      a: "M., 38 anos",
-    },
-    {
-      q: "Saio de cada sessão com mais clareza sobre quem eu sou e do que estou sendo chamado a fazer.",
-      a: "L., 51 anos",
-    },
+    "Uma escuta que eu não sabia que era possível.",
+    "Um espaço sério, sem atalhos e sem promessas.",
+    "Saí com a sensação de ter sido visto sem ser julgado.",
+    "Um cuidado raro com cada palavra dita.",
+    "A condução sustenta o silêncio sem pressa.",
   ];
   const [i, setI] = useState(0);
   const next = () => setI((p) => (p + 1) % items.length);
   const prev = () => setI((p) => (p - 1 + items.length) % items.length);
   const t = items[i];
   return (
-    <section id="depoimentos" className="py-24 md:py-32 bg-background">
+    <section id="ecos" className="py-24 md:py-32 bg-background">
       <div className="max-w-3xl mx-auto px-6">
         <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4 text-center">
-          Depoimentos
+          Ecos
         </p>
-        <h2 className="text-3xl md:text-4xl mb-14 text-center">
-          Histórias de homens que atravessaram.
+        <h2 className="text-3xl md:text-4xl mb-6 text-center">
+          Sobre o espaço, a escuta e a condução.
         </h2>
+        <p className="font-sub text-base md:text-lg italic text-muted-foreground text-center max-w-2xl mx-auto mb-12 leading-relaxed">
+          Já procurou um lugar onde fosse possível baixar a guarda? Onde a sua história pudesse ser olhada sem pressa?
+        </p>
         <figure
           className="p-8 md:p-12 rounded-2xl border border-border bg-card shadow-[var(--shadow-card)] text-center"
         >
           <Quote className="h-8 w-8 text-primary/40 mx-auto mb-5" />
           <blockquote className="font-sub text-lg leading-relaxed text-foreground/90 italic">
-            "{t.q}"
+            "{t}"
           </blockquote>
-          <figcaption className="mt-6 font-sub text-sm text-muted-foreground">
-            — {t.a}
-          </figcaption>
         </figure>
         <div className="flex justify-center items-center gap-4 mt-8">
           <button
@@ -439,14 +483,14 @@ function Depoimentos() {
             <ChevronRight className="w-5 h-5" />
           </button>
         </div>
+        <p className="text-center font-sub text-xs text-muted-foreground mt-10 max-w-2xl mx-auto leading-relaxed">
+          Frases compartilhadas espontaneamente por participantes sobre a experiência do espaço. Nenhum relato envolve resultados clínicos, dados pessoais ou identificação.
+        </p>
       </div>
     </section>
   );
 }
 
-
-
-      
 function Inspiracoes() {
   const quotes = [
     {
@@ -657,8 +701,9 @@ function Index() {
       <ParaQuem />
       <ComoFunciona />
       <Servicos />
+      <Trajetoria />
       <Sobre />
-      <Depoimentos />
+      <Ecos />
       <Inspiracoes />
       <Agendar />
       <Footer />
