@@ -346,8 +346,7 @@ function Sobre() {
             <p>
               Sou Constelador e Terapeuta Sistêmico. Há mais de uma década
               acompanho processos de autoconhecimento, transição de vida e
-              reconciliação com as próprias origens, com especial dedicação ao
-              trabalho com homens adultos.
+              reconciliação com as próprias origens.
             </p>
             <p>
               Minha abordagem integra a Constelação Familiar com uma condução
@@ -356,9 +355,12 @@ function Sobre() {
               limitam vínculos, escolhas e possibilidades de vida.
             </p>
             <p>
-              Embora meu trabalho tenha hoje um foco especial no universo
-              masculino, o que sustenta minha prática é o compromisso com
-              histórias humanas que pedem escuta, verdade e reposicionamento.
+              Tenho um foco especial no trabalho com homens em meia-idade —
+              momento de travessia em que muitas perguntas pedem lugar. Mas
+              meu consultório acolhe qualquer pessoa que chegue com uma
+              história que pede escuta: mulheres, casais, jovens adultos. O
+              que sustenta a prática não é o público, é o compromisso com a
+              verdade de cada história.
             </p>
             <p>
               Acredito que toda história merece ser olhada com dignidade — e
