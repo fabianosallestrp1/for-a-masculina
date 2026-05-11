@@ -24,6 +24,9 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+  --color-accent-strong: var(--accent-strong);
+  --color-primary-deep: var(--primary-deep);
+  --color-primary-soft: var(--primary-soft);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
@@ -37,42 +40,47 @@
 :root {
   --radius: 0.75rem;
 
-  /* Brand palette — Fabiano Salles */
-  --background: oklch(1 0 0);                  /* white */
-  --foreground: oklch(0.28 0.02 250);          /* deep neutral */
+  /* Brand palette — Fabiano Salles (Opção A: Confiança + Cura) */
+  /* #1E5A7A petróleo · #2497D1 azul · #4FA8A0 teal · #BFD8CC sálvia · #F8F7F3 areia · #5E6468 cinza */
+
+  --background: oklch(1 0 0);                  /* branco — base */
+  --foreground: oklch(0.32 0.04 235);          /* texto sobre claro (próx. petróleo) */
 
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.28 0.02 250);
+  --card-foreground: oklch(0.32 0.04 235);
 
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.28 0.02 250);
+  --popover-foreground: oklch(0.32 0.04 235);
 
-  --primary: oklch(0.62 0.14 235);             /* #2497d1 azul principal */
+  --primary: oklch(0.66 0.13 232);             /* #2497D1 azul principal */
   --primary-foreground: oklch(1 0 0);
 
-  --primary-deep: oklch(0.42 0.13 250);        /* azul marinho profundo (do logo) */
-  --primary-soft: oklch(0.97 0.025 235);       /* #E1F5FE azul claro */
+  --primary-deep: oklch(0.43 0.07 230);        /* #1E5A7A azul petróleo */
+  --primary-soft: oklch(0.96 0.02 200);        /* derivado claro do teal/azul */
 
-  --secondary: oklch(0.97 0.025 235);          /* azul claro */
-  --secondary-foreground: oklch(0.42 0.13 250);
+  --secondary: oklch(0.88 0.04 165);           /* #BFD8CC sálvia clara */
+  --secondary-foreground: oklch(0.43 0.07 230);
 
-  --muted: oklch(0.97 0.005 250);
-  --muted-foreground: oklch(0.48 0.012 250);   /* #616161-ish */
+  --muted: oklch(0.975 0.004 85);              /* #F8F7F3 areia/off-white */
+  --muted-foreground: oklch(0.48 0.008 240);   /* #5E6468 cinza rocha */
 
-  --accent: oklch(0.62 0.14 235);
+  --accent: oklch(0.68 0.07 185);              /* #4FA8A0 teal terapêutico */
   --accent-foreground: oklch(1 0 0);
+
+  /* Variante mais escura do teal — uso em CTAs para garantir contraste AA em texto */
+  --accent-strong: oklch(0.58 0.07 185);       /* ~#3E8B84 */
 
   --destructive: oklch(0.55 0.18 28);
   --destructive-foreground: oklch(1 0 0);
 
-  --border: oklch(0.92 0.008 250);
-  --input: oklch(0.92 0.008 250);
-  --ring: oklch(0.62 0.14 235);
+  --border: oklch(0.92 0.008 230);
+  --input: oklch(0.92 0.008 230);
+  --ring: oklch(0.68 0.07 185);
 
-  --gradient-brand: linear-gradient(135deg, oklch(0.62 0.14 235) 0%, oklch(0.42 0.13 250) 100%);
-  --gradient-soft: linear-gradient(180deg, oklch(0.99 0.012 235) 0%, oklch(0.97 0.025 235) 100%);
-  --shadow-soft: 0 10px 40px -18px oklch(0.42 0.13 250 / 0.25);
-  --shadow-card: 0 4px 24px -8px oklch(0.42 0.13 250 / 0.12);
+  --gradient-brand: linear-gradient(135deg, oklch(0.66 0.13 232) 0%, oklch(0.43 0.07 230) 100%);
+  --gradient-soft: linear-gradient(180deg, oklch(0.99 0.004 85) 0%, oklch(0.975 0.004 85) 100%);
+  --shadow-soft: 0 10px 40px -18px oklch(0.43 0.07 230 / 0.25);
+  --shadow-card: 0 4px 24px -8px oklch(0.43 0.07 230 / 0.12);
 }
 
 .dark {
