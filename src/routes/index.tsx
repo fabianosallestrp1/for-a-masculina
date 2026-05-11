@@ -47,9 +47,9 @@ function Nav() {
   const [open, setOpen] = useState(false);
   return (
     <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/85 border-b border-border">
-      <div className="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-5 h-20 flex items-center justify-between">
         <a href="#topo" className="flex items-center gap-2">
-          <img src={logo} alt="Fabiano Salles" className="h-9 w-auto" />
+          <img src={logo} alt="Fabiano Salles" className="h-14 sm:h-16 w-auto" />
         </a>
         <nav className="hidden md:flex gap-7 text-sm font-sub text-muted-foreground">
           {NAV.map(([l, h]) => (
@@ -62,7 +62,7 @@ function Nav() {
           href={WHATSAPP_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:inline-flex text-sm px-5 py-2.5 rounded-full bg-primary text-primary-foreground hover:opacity-90 transition font-sub font-semibold"
+          className="hidden md:inline-flex text-sm px-5 py-2.5 rounded-full bg-accent-strong text-accent-foreground hover:bg-accent transition font-sub font-semibold"
         >
           Agendar
         </a>
@@ -90,7 +90,7 @@ function Nav() {
           ))}
           <a
             href={WHATSAPP_URL}
-            className="text-center text-sm px-5 py-2.5 rounded-full bg-primary text-primary-foreground font-sub font-semibold"
+            className="text-center text-sm px-5 py-2.5 rounded-full bg-accent-strong text-accent-foreground font-sub font-semibold"
           >
             Agendar
           </a>
@@ -134,7 +134,7 @@ function Hero() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-7 py-3.5 rounded-full bg-primary text-primary-foreground font-sub font-semibold hover:opacity-90 transition shadow-[var(--shadow-soft)] text-center inline-flex items-center justify-center gap-2"
+              className="px-7 py-3.5 rounded-full bg-accent-strong text-accent-foreground font-sub font-semibold hover:bg-accent transition shadow-[var(--shadow-soft)] text-center inline-flex items-center justify-center gap-2"
             >
               <MessageCircle className="w-4 h-4" />
               Falar no WhatsApp
@@ -180,7 +180,7 @@ function ParaQuem() {
     "Você busca um espaço sério e seguro, onde possa olhar para si com verdade, sem precisar sustentar máscaras o tempo todo.",
   ];
   return (
-    <section id="para-quem" className="py-24 md:py-32 bg-background">
+    <section id="para-quem" className="py-24 md:py-32 bg-muted">
       <div className="max-w-4xl mx-auto px-6">
         <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4">
           Para quem é
@@ -242,11 +242,7 @@ function ComoFunciona() {
     },
   ];
   return (
-    <section
-      id="como-funciona"
-      className="py-24 md:py-32"
-      style={{ background: "var(--primary-soft)" }}
-    >
+    <section id="como-funciona" className="py-24 md:py-32 bg-background">
       <div className="max-w-5xl mx-auto px-6">
         <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4">
           Como funciona
@@ -292,7 +288,7 @@ function Servicos() {
     },
   ];
   return (
-    <section id="servicos" className="py-24 md:py-32 bg-background">
+    <section id="servicos" className="py-24 md:py-32 bg-muted">
       <div className="max-w-6xl mx-auto px-6">
         <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4">
           Serviços
@@ -387,7 +383,7 @@ function Trajetoria() {
     "Participação em encontros e jornadas — [evento / ano]",
   ];
   return (
-    <section id="trajetoria" className="py-24 md:py-32 bg-secondary/30">
+    <section id="trajetoria" className="py-24 md:py-32 bg-background">
       <div className="max-w-5xl mx-auto px-6">
         <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4 text-center">
           Trajetória
@@ -438,7 +434,7 @@ function Ecos() {
   const prev = () => setI((p) => (p - 1 + items.length) % items.length);
   const t = items[i];
   return (
-    <section id="ecos" className="py-24 md:py-32 bg-background">
+    <section id="ecos" className="py-24 md:py-32 bg-muted">
       <div className="max-w-3xl mx-auto px-6">
         <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4 text-center">
           Ecos
@@ -512,11 +508,7 @@ function Inspiracoes() {
     },
   ];
   return (
-    <section
-      id="inspiracoes"
-      className="py-24 md:py-32"
-      style={{ background: "var(--primary-soft)" }}
-    >
+    <section id="inspiracoes" className="py-24 md:py-32 bg-background">
       <div className="max-w-6xl mx-auto px-6">
         <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4">
           Inspirações
@@ -550,7 +542,7 @@ function Inspiracoes() {
 
 function Agendar() {
   return (
-    <section id="agendar" className="py-24 md:py-32 bg-background">
+    <section id="agendar" className="py-24 md:py-32 bg-muted">
       <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <div>
           <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4">
@@ -621,10 +613,7 @@ function Agendar() {
           </div>
         </div>
 
-        <div
-          className="rounded-2xl p-8 md:p-10 text-center"
-          style={{ background: "var(--primary-soft)" }}
-        >
+        <div className="rounded-2xl p-8 md:p-10 text-center bg-secondary/40 border border-border">
           <h3 className="text-2xl md:text-3xl mb-4">Pronto para começar?</h3>
           <p className="font-sub text-muted-foreground mb-8 leading-relaxed">
             Agende sua primeira conversa e dê o passo inicial em direção a uma
@@ -634,7 +623,7 @@ function Agendar() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 w-full px-8 py-4 rounded-full bg-primary text-primary-foreground font-sub font-semibold hover:opacity-90 transition shadow-[var(--shadow-soft)]"
+            className="inline-flex items-center justify-center gap-2 w-full px-8 py-4 rounded-full bg-accent-strong text-accent-foreground font-sub font-semibold hover:bg-accent transition shadow-[var(--shadow-soft)]"
           >
             <MessageCircle className="w-4 h-4" />
             Agendar agora
