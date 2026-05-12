@@ -27,9 +27,11 @@
   --color-accent-strong: var(--accent-strong);
   --color-primary-deep: var(--primary-deep);
   --color-primary-soft: var(--primary-soft);
+  --color-surface-sand-light: var(--surface-sand-light);
+  --color-surface-sand: var(--surface-sand);
+  --color-surface-sage-light: var(--surface-sage-light);
   --color-surface-sage: var(--surface-sage);
-  --color-surface-mint: var(--surface-mint);
-  --color-surface-aqua: var(--surface-aqua);
+  --color-surface-sky-light: var(--surface-sky-light);
   --color-surface-sky: var(--surface-sky);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
