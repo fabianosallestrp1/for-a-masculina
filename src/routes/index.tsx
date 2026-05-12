@@ -180,7 +180,7 @@ function ParaQuem() {
     "Você busca um espaço sério e seguro, onde possa olhar para si com verdade, sem precisar sustentar máscaras o tempo todo.",
   ];
   return (
-    <section id="para-quem" className="py-24 md:py-32 bg-surface-mint">
+    <section id="para-quem" className="py-24 md:py-32 bg-surface-sand">
       <div className="max-w-4xl mx-auto px-6">
         <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4">
           Para quem é
@@ -242,7 +242,7 @@ function ComoFunciona() {
     },
   ];
   return (
-    <section id="como-funciona" className="py-24 md:py-32 bg-surface-aqua">
+    <section id="como-funciona" className="py-24 md:py-32 bg-surface-sage">
       <div className="max-w-5xl mx-auto px-6">
         <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4">
           Como funciona
@@ -288,7 +288,7 @@ function Servicos() {
     },
   ];
   return (
-    <section id="servicos" className="py-24 md:py-32 bg-surface-sky">
+    <section id="servicos" className="py-24 md:py-32 bg-surface-sky-light">
       <div className="max-w-6xl mx-auto px-6">
         <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4">
           Serviços
@@ -383,7 +383,7 @@ function Trajetoria() {
     "Participação em encontros e jornadas — [evento / ano]",
   ];
   return (
-    <section id="trajetoria" className="py-24 md:py-32 bg-surface-sage">
+    <section id="trajetoria" className="py-24 md:py-32 bg-surface-sand-light">
       <div className="max-w-5xl mx-auto px-6">
         <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4 text-center">
           Trajetória
@@ -434,7 +434,7 @@ function Ecos() {
   const prev = () => setI((p) => (p - 1 + items.length) % items.length);
   const t = items[i];
   return (
-    <section id="ecos" className="py-24 md:py-32 bg-surface-mint">
+    <section id="ecos" className="py-24 md:py-32 bg-surface-sage-light">
       <div className="max-w-3xl mx-auto px-6">
         <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4 text-center">
           Ecos
@@ -508,7 +508,7 @@ function Inspiracoes() {
     },
   ];
   return (
-    <section id="inspiracoes" className="py-24 md:py-32 bg-surface-aqua">
+    <section id="inspiracoes" className="py-24 md:py-32 bg-surface-sky">
       <div className="max-w-6xl mx-auto px-6">
         <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4">
           Inspirações
@@ -542,7 +542,7 @@ function Inspiracoes() {
 
 function Agendar() {
   return (
-    <section id="agendar" className="py-24 md:py-32 bg-surface-sky">
+    <section id="agendar" className="py-24 md:py-32 bg-surface-sand">
       <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <div>
           <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4">
