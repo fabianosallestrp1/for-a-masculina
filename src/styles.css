@@ -87,13 +87,12 @@
   --gradient-soft: linear-gradient(160deg, oklch(0.965 0.018 165) 0%, oklch(0.96 0.022 200) 55%, oklch(0.955 0.025 230) 100%);
 
   /* Faixas de fundo: degradê suave de verde (sálvia) → teal → azul claro, ecoando o logotipo */
-  /* Faixas alternadas: areia · verde · azul, em tonalidades variadas */
-  --surface-sand-light: oklch(0.975 0.012 85);
-  --surface-sand:       oklch(0.935 0.024 82);
-  --surface-sage-light: oklch(0.945 0.035 165);
-  --surface-sage:       oklch(0.88 0.055 168);
-  --surface-sky-light:  oklch(0.945 0.038 225);
-  --surface-sky:        oklch(0.86 0.06 225);
+  /* Faixas alternadas — derivadas da paleta da marca (Opção A) */
+  --surface-sand:  #EFEAD9;   /* areia mais quente que o off-white #F8F7F3 */
+  --surface-sage:  #BFD8CC;   /* sálvia clara — cor de marca */
+  --surface-teal:  #A9CFCB;   /* teal suave (tinta de #4FA8A0) */
+  --surface-azure: #C2DCEC;   /* azul claro (tinta de #2497D1) */
+  --surface-deep:  #8FB0C2;   /* petróleo claro (tinta de #1E5A7A) */
 
   --shadow-soft: 0 10px 40px -18px oklch(0.43 0.07 230 / 0.25);
   --shadow-card: 0 4px 24px -8px oklch(0.43 0.07 230 / 0.12);
