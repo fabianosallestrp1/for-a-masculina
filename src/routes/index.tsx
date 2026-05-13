@@ -570,7 +570,7 @@ function Agendar() {
               </a>
             </li>
             <li className="flex items-start gap-3">
-              <Mail className="w-5 h-5 text-primary mt-1 shrink-0" />
+              <Mail className="w-5 h-5 text-white mt-1 shrink-0" />
               <a
                 href={`mailto:${CONTACT.email}`}
                 className="text-foreground hover:text-primary transition break-all"
