@@ -85,11 +85,9 @@
 
   /* Faixas de fundo: degradê suave de verde (sálvia) → teal → azul claro, ecoando o logotipo */
   /* Faixas alternadas — derivadas da paleta da marca (Opção A) */
-  --surface-sand:  #EFEAD9;   /* areia mais quente que o off-white #F8F7F3 */
-  --surface-sage:  #BFD8CC;   /* sálvia clara — cor de marca */
-  --surface-teal:  #A9CFCB;   /* teal suave (tinta de #4FA8A0) */
-  --surface-azure: #C2DCEC;   /* azul claro (tinta de #2497D1) */
-  --surface-deep:  #8FB0C2;   /* petróleo claro (tinta de #1E5A7A) */
+  --surface-sage-light: #E8F0EC;  /* sálvia muito clara — neutro quente */
+  --surface-azure:      #C2DCEC;  /* azul claro (tinta de #2497D1) */
+  --surface-deep:       #8FB0C2;  /* petróleo claro (tinta de #1E5A7A) */
 
   --shadow-soft: 0 10px 40px -18px oklch(0.43 0.07 230 / 0.25);
   --shadow-card: 0 4px 24px -8px oklch(0.43 0.07 230 / 0.12);
