@@ -242,7 +242,7 @@ function ComoFunciona() {
     },
   ];
   return (
-    <section id="como-funciona" className="py-24 md:py-32 bg-surface-sage-light">
+    <section id="como-funciona" className="py-24 md:py-32 bg-surface-azure">
       <div className="max-w-5xl mx-auto px-6">
         <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4">
           Como funciona
