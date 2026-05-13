@@ -545,7 +545,7 @@ function Agendar() {
     <section id="agendar" className="py-24 md:py-32 bg-surface-deep">
       <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4">
+          <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-white mb-4">
             Como agendar
           </p>
           <h2 className="text-3xl md:text-4xl mb-6">O primeiro passo é simples.</h2>
@@ -556,7 +556,7 @@ function Agendar() {
           </p>
           <ul className="space-y-4 font-sub">
             <li className="flex items-start gap-3">
-              <MessageCircle className="w-5 h-5 text-primary mt-1 shrink-0" />
+              <MessageCircle className="w-5 h-5 text-white mt-1 shrink-0" />
               <a
                 href={WHATSAPP_URL}
                 target="_blank"
