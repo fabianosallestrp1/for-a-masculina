@@ -383,7 +383,7 @@ function Trajetoria() {
     "Participação em encontros e jornadas — [evento / ano]",
   ];
   return (
-    <section id="trajetoria" className="py-24 md:py-32 bg-surface-sage-light">
+    <section id="trajetoria" className="py-24 md:py-32 bg-surface-azure">
       <div className="max-w-5xl mx-auto px-6">
         <p className="font-sub text-sm uppercase tracking-[0.25em] font-semibold text-primary mb-4 text-center">
           Trajetória
