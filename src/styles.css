@@ -27,9 +27,7 @@
   --color-accent-strong: var(--accent-strong);
   --color-primary-deep: var(--primary-deep);
   --color-primary-soft: var(--primary-soft);
-  --color-surface-sand: var(--surface-sand);
-  --color-surface-sage: var(--surface-sage);
-  --color-surface-teal: var(--surface-teal);
+  --color-surface-sage-light: var(--surface-sage-light);
   --color-surface-azure: var(--surface-azure);
   --color-surface-deep: var(--surface-deep);
   --color-destructive: var(--destructive);
