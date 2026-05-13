@@ -582,7 +582,7 @@ function Agendar() {
               </a>
             </li>
             <li className="flex items-start gap-3">
-              <MapPin className="w-5 h-5 text-primary mt-1 shrink-0" />
+              <MapPin className="w-5 h-5 text-white mt-1 shrink-0" />
               <span className="text-foreground">
                 <span className="block text-sm uppercase tracking-wider font-semibold text-muted-foreground">
                   Atendimento
